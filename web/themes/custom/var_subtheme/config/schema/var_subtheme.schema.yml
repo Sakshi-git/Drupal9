@@ -1,0 +1,4 @@
+# Schema for the configuration files of the var_subtheme.
+var_subtheme.settings:
+  type: vartheme_bs4.settings
+  label: "var_subtheme settings"

@@ -1,0 +1,17 @@
+// var_subtheme Maintenance page custom style.
+// -----------------------------------------------------------------------------
+@import "../../node_modules/bootstrap/scss/functions";  // Bootstrap functions.
+@import "../../node_modules/bootstrap/scss/mixins";     // Bootstrap mixins.
+@import "../variables";                   // var_subtheme variables.
+@import "../mixins";                      // var_subtheme mixins.
+// -----------------------------------------------------------------------------
+
+/* Insert your var_subtheme maintenance page custom SASS styling. */
+
+.maintenance-page {
+  footer {
+    .footer-credits {
+      @include font-size(0.75rem);
+    }
+  }
+}

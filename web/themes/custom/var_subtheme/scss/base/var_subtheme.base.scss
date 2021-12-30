@@ -1,0 +1,9 @@
+// var_subtheme base, which Bootstrap overrides.
+// -----------------------------------------------------------------------------
+@import "../../node_modules/bootstrap/scss/functions";  // Bootstrap functions.
+@import "../../node_modules/bootstrap/scss/mixins";     // Bootstrap mixins.
+@import "../variables";                   // var_subtheme variables.
+@import "../mixins";                      // var_subtheme mixins.
+// -----------------------------------------------------------------------------
+
+/* Insert your var_subtheme base overrides over Vartheme BS4 and Bootstrap */

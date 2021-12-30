@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "edf9e27d07e0de6523a84525cd942182",
+    "content-hash": "ae338595c9df8f7ada26f1b628936aa1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -939,6 +939,54 @@
             "time": "2021-02-21T02:53:33+00:00"
         },
         {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "9888dcc74993c030b75f3dd548bb5e20cdbd740c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/9888dcc74993c030b75f3dd548bb5e20cdbd740c",
+                "reference": "9888dcc74993c030b75f3dd548bb5e20cdbd740c",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.1"
+            },
+            "time": "2021-06-08T15:12:46+00:00"
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v1.1.0",
             "source": {
@@ -1235,6 +1283,56 @@
             },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
+        },
+        {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.1.6.zip",
+                "reference": "5.1.6",
+                "shasum": "788c48197afdcb248aa69d8e9fd756411e972b57"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "twbs/bootstrap": "^4.4.1"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.1.6",
+                    "datestamp": "1633697540",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/2824325",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                }
+            ],
+            "description": "Bootstrap 4 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            }
         },
         {
             "name": "drupal/core",
@@ -1669,6 +1767,70 @@
                 "source": "https://github.com/drupal/core-recommended/tree/9.3.0"
             },
             "time": "2021-12-08T22:09:38+00:00"
+        },
+        {
+            "name": "drupal/vartheme_bs4",
+            "version": "9.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/vartheme_bs4.git",
+                "reference": "9.0.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/vartheme_bs4-9.0.10.zip",
+                "reference": "9.0.10",
+                "shasum": "89ae16eca59c0480beedd31475a8e088371d082a"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0",
+                "cweagans/composer-patches": "~1.0",
+                "drupal/bootstrap_barrio": "~5.1.0",
+                "drupal/core": "~9.0",
+                "oomphinc/composer-installers-extender": "~1.0 || ~2.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "9.0.10",
+                    "datestamp": "1639568945",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "installer-types": [
+                    "bower-asset",
+                    "npm-asset"
+                ],
+                "enable-patching": true,
+                "composer-exit-on-patch-failure": true
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vardot",
+                    "homepage": "https://www.drupal.org/vardot",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                },
+                {
+                    "name": "waleedq",
+                    "homepage": "https://www.drupal.org/user/375290"
+                }
+            ],
+            "description": "A SASS base theme for Varbase standard websites. Based on Barrio (Bootstrap 4) theme.",
+            "homepage": "https://www.drupal.org/project/vartheme_bs4",
+            "support": {
+                "source": "http://cgit.drupalcode.org/vartheme_bs4",
+                "issues": "http://drupal.org/project/issues/vartheme_bs4"
+            }
         },
         {
             "name": "drush/drush",
@@ -2817,6 +2979,63 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.2"
             },
             "time": "2021-11-30T19:35:32+00:00"
+        },
+        {
+            "name": "oomphinc/composer-installers-extender",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oomphinc/composer-installers-extender.git",
+                "reference": "cbf4b6f9a24153b785d09eee755b995ba87bd5f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/cbf4b6f9a24153b785d09eee755b995ba87bd5f9",
+                "reference": "cbf4b6f9a24153b785d09eee755b995ba87bd5f9",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0",
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "phpunit/phpunit": "^7.2",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "OomphInc\\ComposerInstallersExtender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "email": "stephen@oomphinc.com",
+                    "homepage": "https://github.com/balbuf"
+                },
+                {
+                    "name": "Nathan Dentzau",
+                    "email": "nate@oomphinc.com",
+                    "homepage": "http://oomph.is/ndentzau"
+                }
+            ],
+            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
+            "homepage": "http://www.oomphinc.com/",
+            "support": {
+                "issues": "https://github.com/oomphinc/composer-installers-extender/issues",
+                "source": "https://github.com/oomphinc/composer-installers-extender/tree/2.0.1"
+            },
+            "time": "2021-12-15T12:32:42+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -6044,6 +6263,61 @@
                 }
             ],
             "time": "2021-11-18T18:49:23+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v4.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "043a03c95a2ad6738f85b65e53b9dbdfb03b8d10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/043a03c95a2ad6738f85b65e53b9dbdfb03b8d10",
+                "reference": "043a03c95a2ad6738f85b65e53b9dbdfb03b8d10",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v4.6.1"
+            },
+            "time": "2021-10-28T14:45:21+00:00"
         },
         {
             "name": "twig/twig",
