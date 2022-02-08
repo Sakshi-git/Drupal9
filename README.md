@@ -1,7 +1,7 @@
-**Setup your Drupal site using docksal**
+Setup your Drupal site using docksal
 
 Step 1:
-Install Docksal: bash <(curl -fsSL https://get.docksal.io)
+Install Docksal: bash <(curl -fsSL https://get.docksal.io)Cancel changes
 
 Step 2: 
 Reconfigure apache to listen to different host and ports
@@ -19,9 +19,8 @@ Change
 To 
 <VirtualHost *:8080>
 
+Step 3: sudo service apache2 restart
+Step 4: Go to project Repository 
 
-sudo service apache2 restart
- 
-Go to project Repository 
+run command "fin init"
 
-run  command "fin init"
