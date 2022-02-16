@@ -1,1 +1,22 @@
 /* Insert your var_subtheme header custom SASS styling. */
+
+
+.navigation-block {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.navigation-block .navbar-brand img{
+    object-fit: contain;
+    max-width: 300px;
+    height: 80px;
+}
+
+nav.navigation {
+    padding: 20px;
+}
+.navbar-brand .region-navigation {
+    justify-content: space-between;
+}

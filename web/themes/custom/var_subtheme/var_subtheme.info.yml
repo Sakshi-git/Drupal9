@@ -6,16 +6,20 @@ project: vartheme_bs4
 core_version_requirement: ^9
 regions:
   navigation: "Navigation"
+  banner: "Banner"
   navigation_collapsible: "Navigation Collapsible"
   header: "Top Bar"
   highlighted: "Highlighted"
   help: "Help"
+  precontent: "Pre Content Section"
   content: "Content"
+  postcontent: "After Content Section"
   sidebar_first: "Primary"
   sidebar_second: "Secondary"
   footer: "Footer"
   page_top: "Page top"
   page_bottom: "Page bottom"
+  copyright: "Copyright"
 libraries:
   # Bootstrap styles and scripts libraries.
   - var_subtheme/bootstrap-styles

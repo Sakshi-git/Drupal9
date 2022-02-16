@@ -1,1 +1,197 @@
 /* Insert your var_subtheme content custom SASS styling. */
+.banner-slider,
+.banner-slider .views_slideshow_cycle_teaser_section,
+.banner-slider .view-content,
+.banner-slider .views_slideshow_cycle_slide,
+.banner-slider .slider-container {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.banner-slider {
+    z-index: -1;
+}
+.banner-slider .skin-default,
+.banner-slider  .views_slideshow_cycle_main  {
+    display: block;
+    height: 100%;
+}
+.banner-slider .view-content,
+.banner-slider .slider-container{   
+    height: 500px;
+}
+.banner-slider .slider-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+
+}
+.banner-slider .slider-container .slider-content {
+    margin-top: -450px;
+    color: #fff;
+
+}
+
+.banner-slider h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-slider .description {    
+    width: 90% !important;
+    padding: 26px 0;
+
+}
+.banner-slider .description p {
+    font-size: 24px !important;
+    line-height: 50px;
+}
+.banner-slider .slider-link a{
+    font-size: 30px !important;
+    top: 300px !important;
+    width: 90% !important;
+    color: #fff;
+}
+
+.banner-slider .views-slideshow-controls-bottom {
+    position: absolute;
+    z-index: 999;
+    left: 480px;
+    top: 400px;
+}
+.banner-slider .views-slideshow-controls-bottom .views-slideshow-pager-bullets {
+    text-align: justify;
+    display: inline-block;
+    width: 220px;
+}
+
+.banner-slider .views-slideshow-controls-bottom .views-slideshow-pager-bullets li {
+    width: 44%;
+    border-radius: 0;
+    line-height: 5px;
+    background: #aaa;
+}
+.views-slideshow-controls-bottom .views-slideshow-pager-bullets li.active {
+    background: #fff;
+  }
+
+  .main-container {
+      padding: 50px 0;
+  }
+
+  .text-primary {
+      color: #3121ff;
+  }
+
+  .what-we-do-block__learn-more {
+    display: block;
+    margin: 6rem 0;
+  }
+
+  .primary-button {
+    font-weight: 600;
+    width: 100%;
+    font-size: 20px;
+    padding: 16px 32px;
+    margin: 20px 0;
+    background: #3121ff !important;
+    color: #fff;
+    border-radius: 30px;
+  }
+  .primary-button:focus,
+  .primary-button:hover{
+      color: #fff;
+  }
+
+.postcontent-section {
+    
+    background: #3121ff;
+}
+.news-section {
+    padding: 50px 0;
+    background: #3121ff;
+}
+
+.news-inner-wrapper {
+    min-height: 428px;
+    display: grid;
+    place-items: flex-start;
+  }
+  .news-name {
+    display: inline-block;
+    padding: 3px 15px;
+    background: #0E6362;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .news-inner-wrapper .news-name {
+    margin-top: 30px;
+    margin-bottom: 22px;
+  }
+  .news-inner-wrapper .section-title {
+    border-right: none;
+    margin-bottom: 22px;
+    font-size: 39px;
+    line-height: 48px;
+  }
+  .section-title {
+    text-transform: capitalize;
+    font-family: 'BrownStd-Regular';
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #00205b;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 32px;
+  }
+  .news-desp {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .section-link {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-left: 5px;
+  }
+  .section-link:hover{
+      color: rgb(154, 218, 243);
+      text-decoration: none;
+  }
+  .section-title::after {
+    content: ' ';
+    position: absolute;
+    bottom: -7px;
+    height: 4px;
+    width: 67px;
+    background: #fae110;
+    display: block;
+  }
+  .news-inner-img {
+    height: 430px;
+    width: 430px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+  }
+  .news-inner-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .precontent-section {
+    margin-top: 4rem;
+  }
