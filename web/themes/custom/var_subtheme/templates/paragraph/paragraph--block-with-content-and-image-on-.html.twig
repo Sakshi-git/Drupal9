@@ -2,27 +2,55 @@
 {% block paragraph %}
 <div class="news_section">
         <div class="container">
-            <div class="row mt-5 c-row-reverse">                
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="news-inner-wrapper">
-                    {% if content.field_link.0.url.external %}
-                      {% set card_link = content.field_link.uri  %}
-                    {% else %}
-                      {% set card_link = content.field_link.0['#url']  %}
-                    {% endif %}  
-                        <h2 class="section-title">{{ content.field_title.0['#context'].value|raw }}</h2>
-                        <div class="news-desp">{{ content.field_description.0['#text'] | raw }}</div>
-                        <a href="{{ card_link }}" class="section-link">{{ content.field_link.0['#title'] }} <i class="fas fa-chevron-right"></i></a>
+            {% if content.field_image_position.0['#markup'] == 'right' %}
+                <div class="row mt-5 c-row-reverse">                
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="news-inner-wrapper">
+                        {% if content.field_link.0.url.external %}
+                        {% set card_link = content.field_link.uri  %}
+                        {% else %}
+                        {% set card_link = content.field_link.0['#url']  %}
+                        {% endif %}  
+                            <h2 class="section-title">{{ content.field_title.0['#context'].value|raw }}</h2>
+                            <div class="news-desp">{{ content.field_description.0['#text'] | raw }}</div>
+                            {%  if content.field_link['#items'] %}
+                                <a href="{{ card_link }}" class="section-link">{{ content.field_link.0['#title'] }} <i class="fas fa-chevron-right"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="news-inner-img ml-auto n-margin-auto">
+                            {% if content.field_image['#items'] %}
+                            <img src ="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt=""/>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="news-inner-img ml-auto n-margin-auto">
-                        {% if content.field_image['#items'] %}
-                          <img src ="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt=""/>
-                        {% endif %}
+                {% else %}
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="news-inner-img mr-auto n-margin-auto">
+                            {% if content.field_image['#items'] %}
+                            <img src ="{{ file_url(content.field_image['#items'].entity.uri.value) }}" alt=""/>
+                            {% endif %}
+                        </div>
+                    </div>            
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="news-inner-wrapper">
+                        {% if content.field_link.0.url.external %}
+                        {% set card_link = content.field_link.uri  %}
+                        {% else %}
+                        {% set card_link = content.field_link.0['#url']  %}
+                        {% endif %}  
+                            <h2 class="section-title">{{ content.field_title.0['#context'].value|raw }}</h2>
+                            <div class="news-desp">{{ content.field_description.0['#text'] | raw }}</div>
+                            {% if content.field_link['#items'] %}
+                                <a href="{{ card_link }}" class="section-link">{{ content.field_link.0['#title'] }} <i class="fas fa-chevron-right"></i></a>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
-            </div>
+            {% endif %}
         </div>
     </div>
 {% endblock paragraph %}

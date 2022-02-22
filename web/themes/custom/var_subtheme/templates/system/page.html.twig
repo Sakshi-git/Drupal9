@@ -106,10 +106,16 @@
     </div>
   </div>
 </div>
-
-{% if  page.banner %}
-  <div class="banner-section" role="banner">
-  {{ page.banner }}
+{% if node.field_add_hero_banner or  page.banner %}
+  <div class="content-banner-section" role="banner">
+  {% if node.field_add_hero_banner %}
+      {% for item in node.field_add_hero_banner %}
+        {{ drupal_entity('paragraph', item.target_id) }}
+      {% endfor %}
+  {% endif %}
+  {% if  page.banner %}
+    {{ page.banner }}
+  {% endif %}
   </div>
 {% endif %}
 

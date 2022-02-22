@@ -8,9 +8,7 @@
     width: 100%;
     position: relative;
 }
-.banner-slider {
-    z-index: -1;
-}
+
 .banner-slider .skin-default,
 .banner-slider  .views_slideshow_cycle_main  {
     display: block;
@@ -45,7 +43,7 @@
 }
 .banner-slider .description p {
     font-size: 24px !important;
-    line-height: 50px;
+    line-height: 35px;
 }
 .banner-slider .slider-link a{
     font-size: 30px !important;
@@ -58,7 +56,7 @@
     position: absolute;
     z-index: 999;
     left: 480px;
-    top: 400px;
+    top: 450px;
 }
 .banner-slider .views-slideshow-controls-bottom .views-slideshow-pager-bullets {
     text-align: justify;
@@ -136,8 +134,8 @@
   .news-inner-wrapper .section-title {
     border-right: none;
     margin-bottom: 22px;
-    font-size: 39px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 45px;
   }
   .section-title {
     text-transform: capitalize;
@@ -146,13 +144,21 @@
     padding-right: 15px;
     margin-right: 15px;
     border-right: 1px solid #00205b;
-    color: #fff;
+    color: #3121ff;
     font-weight: 700;
     letter-spacing: 0.5px;
     font-size: 32px;
   }
-  .news-desp {
+  .our-mission-block .news-inner-wrapper .section-title {
     color: #fff;
+  }
+  .our-mission-block .news-inner-wrapper .news-desp {
+    color: #fff;
+  }
+  .our-mission-block .news-inner-wrapper .slider-link {
+    color: #fff;
+  }
+  .news-desp {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -160,7 +166,7 @@
   }
   .section-link {
     font-size: 20px;
-    color: #fff;
+    color: #3121ff;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: 0.3s;
@@ -184,7 +190,6 @@
     width: 430px;
     border-radius: 4px;
     position: relative;
-    z-index: 1;
   }
   .news-inner-img img {
     height: 100%;
@@ -194,4 +199,78 @@
   }
   .precontent-section {
     margin-top: 4rem;
+  }
+
+  form > .form-group {
+    display: block;
+    float: left;
+    width: 48%;
+    padding: 0 20px;
+  }
+  .field--type-language {
+    display: none;
+  }
+
+
+  /** banner section ***/
+  .content-banner-section {
+    height: 400px;
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  .content-banner-section .paragraph {
+    height: 100%;
+    float: left;
+    display: block;
+    width: 100%;
+  }
+  .content-banner-section .banner-design {
+    background-image: url(/sites/default/files/2022-02/slide-background-2.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+  }
+
+  .content-banner-section .banner-design .b-title{
+    color: #3121ff;
+    padding: 20px 0;
+  }
+
+  .content-banner-section .banner-design p{
+    color: #3121ff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h2.title, h2{
+    margin-bottom: 4rem;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-family: 'BrownStd-Regular';
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+    color: #3121ff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  h3 {
+    margin-top: 2rem;
+    font-size: 22px;
+    line-height: 45px;
+    text-transform: capitalize;
+    font-family: 'BrownStd-Regular';
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+    color: #3121ff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .bg-light .banner-title .b-title,
+  .bg-light .banner-title .title p {
+    color: #fff;
   }
