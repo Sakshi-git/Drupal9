@@ -1,0 +1,8 @@
+name: 'Webform VAS Scale Element'
+type: module
+description: 'Provides webform VAS  Scale element.'
+package: 'Webform'
+core_version_requirement: ^8.7.7 || ^9
+dependencies:
+  - 'webform:webform'
+

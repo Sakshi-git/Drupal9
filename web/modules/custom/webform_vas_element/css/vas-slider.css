@@ -1,0 +1,220 @@
+.vas-slider-parent-container {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #5f5f5f;
+}
+.desktop-vas-slider {
+  display: block;
+  padding-top: 20px;
+}
+.mobile-vas-slider {
+  display: none;
+  padding-top: 20px;
+}
+.desktop-vas-slider .ui-slider-horizontal {
+  -webkit-appearance: none;
+  height: 0.1em;
+  background: #979797;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin: 0px;
+  align-items: center;
+}
+.mobile-vas-slider .ui-slider-vertical {
+  background: #979797;
+  border: none;
+}
+.vas-slider-parent-container .ui-slider {
+  cursor: pointer;
+}
+/*.vas-slider-parent-container .ui-slider .ui-slider-handle {*/
+  /*background: white;*/
+  /*border: 1px solid #ccc;*/
+  /*cursor: pointer;*/
+  /*display: inline-block;*/
+  /*width: 22px;*/
+  /*height: 22px;*/
+  /*background-color: #007ac9;*/
+  /*background-size: 100%;*/
+  /*border-radius: 50%;*/
+/*}*/
+/*.vas-slider-parent-container .ui-slider .ui-slider-handle:after {*/
+  /*content: "";*/
+  /*display: block;*/
+  /*width: 8px;*/
+  /*height: 8px;*/
+  /*margin: auto;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*background-size: 100%;*/
+  /*border-radius: 50%;*/
+  /*background-color: white;*/
+/*}*/
+/*.vas-slider-parent-container .ui-slider .ui-slider-handle:hover {*/
+  /*background-color: #007ac9;*/
+/*}*/
+.custom-slider {
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.custom-data {
+  width: 378px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-data {
+  flex: 14;
+}
+.right-data {
+  flex: 3;
+}
+.corner {
+  height: 10px;
+  border: 1px solid #979797;
+  position: relative;
+  margin: 0 auto;
+}
+.text {
+  display: block;
+  width: 378px;
+  padding-top: 15px;
+}
+.left-text {
+  width: 70%;
+  float: left;
+}
+.right-text {
+  width: 30%;
+  float: left;
+  text-align: right;
+}
+.text::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.form-type-webform-vas-element .noUi-vertical .noUi-handle {
+   background: white;
+   border: 1px solid #ccc;
+   cursor: pointer;
+   display: inline-block;
+   width: 22px;
+   height: 22px;
+   position: absolute;
+   background-color: #007ac9;
+   background-size: 100%;
+   border-radius: 50%;
+   right: 0px;
+ }
+.form-type-webform-vas-element .noUi-horizontal .noUi-handle {
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background-color: #007ac9;
+  background-size: 100%;
+  border-radius: 50%;
+}
+.form-type-webform-vas-element .noUi-target.noUi-horizontal {
+  background: none;
+  border-radius: 0px;
+  cursor: pointer;
+  border: 0px;
+  box-shadow: none;
+  height: 10px;
+}
+.form-type-webform-vas-element .noUi-target.noUi-vertical {
+  background: none;
+  border-radius: 0px;
+  cursor: pointer;
+  border: 0px;
+  width: 23px;
+  box-shadow: none;
+}
+.noUi-target.noUi-horizontal:before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  display: block;
+  top: 50%;
+  position: absolute;
+  border: 1px solid #ccc;
+}
+.noUi-target.noUi-vertical:before {
+  content: "";
+  width: 0px;
+  height: 100%;
+  display: block;
+  left: 50%;
+  position: absolute;
+  border: 1px solid #ccc;
+}
+
+.form-type-webform-vas-element .noUi-vertical .noUi-handle:after,
+.form-type-webform-vas-element .noUi-horizontal .noUi-handle:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
+.form-type-webform-vas-element .noUi-vertical .noUi-handle:before,
+.form-type-webform-vas-element .noUi-horizontal .noUi-handle:before {
+  width: 0px;
+}
+@media screen and (max-width: 570px) {
+  .desktop-vas-slider {
+    display: none;
+  }
+  .mobile-vas-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .mobile-vas-slider-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .vertical-border {
+    margin: 0px;
+    background: #979797;
+    height: 2px;width: 23px;
+  }
+  .upper-box {
+    display: none;
+  }
+  .mobile-box {
+    display: flex;
+  }
+  .custom-slider-text-mobile {
+    text-align: end;
+  }
+}

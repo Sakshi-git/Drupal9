@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_webform_template_color_sc.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function webform_vas_element_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the webform VAS slider module.
+    case 'help.page.webform_vas_element':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Add a VAS slider to webform.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * This hook registers a new theme in your module. It will
+ * automatically look for the template in your module's /templates folder.
+ */
+function webform_vas_element_theme($existing, $type, $theme, $path) {
+
+  return [
+    'input__webform_vas_element' => [
+      // base_hook is important!
+      // Otherwise your template won't know what to render.
+      'base hook' => 'form_element',
+    ],
+  ];
+}

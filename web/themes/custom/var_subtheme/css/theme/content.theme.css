@@ -207,21 +207,25 @@
     width: 48%;
     padding: 0 20px;
   }
-  .field--type-language {
+  form.contact-message-get-in-touch-form .field--type-language {
     display: none;
+  }
+  form.contact-message-get-in-touch-form .field--name-subject,
+  form.contact-message-get-in-touch-form .field--name-message {
+    display: block;
+    width: 96%;
   }
 
 
   /** banner section ***/
   .content-banner-section {
-    height: 400px;
+    height: 500px;
     display: block;
     clear: both;
     width: 100%;
   }
   .content-banner-section .paragraph {
     height: 100%;
-    float: left;
     display: block;
     width: 100%;
   }
@@ -231,6 +235,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 0;
+    min-height: 500px;
+    max-height: 500px;
+    background-position: center;
   }
 
   .content-banner-section .banner-design .b-title{
@@ -245,7 +252,7 @@
   }
 
   h2.title, h2{
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     font-size: 40px;
     line-height: 50px;
     text-transform: capitalize;
@@ -270,7 +277,33 @@
     font-weight: 600;
     letter-spacing: 0.5px;
   }
+
+  h4 {
+    color: #3121ff;
+  }
   .bg-light .banner-title .b-title,
   .bg-light .banner-title .title p {
     color: #fff;
+  }
+  .card {
+    padding: 20px;
+  }
+  .card .card-content p{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .card .card-content h3{
+    color: #343a40;
+    text-transform: capitalize;
+    margin: 1rem;
+  }
+
+  .paragraph:not(.paragraph--type--content-hero-banner){
+    padding: 6rem 0;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: #343a40;
   }

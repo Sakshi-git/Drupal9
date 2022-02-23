@@ -1,0 +1,23 @@
+{% if content.field_card_image['#items'] %}
+  {% set bg_img_url = file_url(content.field_card_image['#items'].entity.uri.value) %}
+{% else %}
+  {% set bg_img_url = '' %}
+{% endif %}
+{% if content.field_card_link.0.url.external %}
+  {% set card_link = content.field_card_link.uri  %}
+{% else %}
+  {% set card_link = content.field_card_link.0['#url']  %}
+{% endif %}   
+<a href ="{{ card_link }}" class="card-link">
+  <div class ="card text-align-center">
+    <div class ="card-image">
+      <img src = "{{ bg_img_url }}"/>
+    </div>
+    <div class="card-content">
+      {% if content.field_card_title['#items']%}  
+          <h3 class="b-title">{{ content.field_card_title.0['#context'].value|raw }}</h3>
+      {% endif %}
+        {{ content.field_desc.0['#text']|raw }}
+    </div>
+  </div>
+</a>

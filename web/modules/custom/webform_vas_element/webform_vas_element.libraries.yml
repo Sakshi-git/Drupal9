@@ -1,0 +1,22 @@
+element.vaslider:
+  version: VERSION
+  css:
+    component:
+      css/vas-slider.css: {weight: 50}
+  js:
+    js/vas-slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - webform_vas_element/libraries.vasslider
+
+libraries.vasslider:
+  css:
+    component:
+      https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.css: { type: external }
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery

@@ -1,6 +1,7 @@
 
 {% block paragraph %}
-<div class="news_section">
+{% block content %}
+    <div class="news_section">
         <div class="container">
             {% if content.field_image_position.0['#markup'] == 'right' %}
                 <div class="row mt-5 c-row-reverse">                
@@ -53,4 +54,5 @@
             {% endif %}
         </div>
     </div>
+    {% endblock %} 
 {% endblock paragraph %}

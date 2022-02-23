@@ -29,6 +29,7 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/vartheme_bs4": "~9.0",
         "drupal/views_slideshow": "^4.8",
+        "drupal/webform": "^6.1",
         "drush/drush": "^10.2",
         "kint-php/kint": "^3.3"
     },

@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set desktop_vas_slider = attributes.id ~ '-slider-5' %}
+{% set mobile_vas_slider = attributes.id ~ '-slider-6' %}
+
+{% set horizontal_vas_slider = attributes.id ~ '-horizontal-slider' %}
+{% set vertical_vas_slider = attributes.id ~ '-vertical-slider' %}
+
+<input{{ attributes.addClass("form-control") }} readonly/>{{ children }}
+
+<div class="vas-slider-parent-container">
+<div class="desktop-vas-slider {{ horizontal_vas_slider }}">
+    <span class="corner"></span>
+    <div id="{{ desktop_vas_slider }}" class="slider" style="width:378px;margin: 0 auto; display: inline-block;"></div>
+    <span class="corner"></span>
+    <div class="text">
+        <div class="left-text">{{ element['#low'] | raw }}</div>
+        <div class="right-text">{{ element['#high'] | raw }}</div>
+    </div>
+</div>
+
+
+<div class="mobile-vas-slider {{ vertical_vas_slider }}">
+    <div class="mobile-vas-slider-text">
+        <div class="mobile-upper-text">{{ element['#high'] | raw }}</div>
+        <div class="mobile-lower-text">{{ element['#low'] | raw }}</div>
+    </div>
+    <div class="mobile-vas-slider-slider">
+        <div class="vertical-border"></div>
+        <div id={{ mobile_vas_slider }} class="slider" style="height: 378px;"></div>
+        <div class="vertical-border"></div>
+    </div>
+</div>
+</div>
+
