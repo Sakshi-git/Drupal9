@@ -1,0 +1,25 @@
+/* Insert your var_subtheme contents custom styling. */
+
+/* profile page css start */
+#block-pagetitle{
+    text-align: center;
+}
+.field--name-field-portfolio-image {
+    float: left;
+    padding: 11px 90px 10px 13px; 
+}
+
+.field--name-field-portfolio-image img{
+    width: 300px;
+    height: 250px;
+}
+.field--name-field-name{
+    width: 64%;
+    float: right;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+}
+/* profile page css end */

@@ -118,3 +118,4 @@ ckeditor_stylesheets:
   - css/layout/equal-height.layout.css
   # Theme
   - css/theme/content.theme.css
+  - css/theme/page.theme.css
