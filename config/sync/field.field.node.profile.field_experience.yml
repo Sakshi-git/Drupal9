@@ -1,0 +1,19 @@
+uuid: 39d302b1-aad6-4040-a720-169586ace90a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experience
+    - node.type.profile
+id: node.profile.field_experience
+field_name: field_experience
+entity_type: node
+bundle: profile
+label: 'Professional experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

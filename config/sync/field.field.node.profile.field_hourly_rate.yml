@@ -1,0 +1,19 @@
+uuid: d44b6f63-f0f2-4391-8326-da975a9a4ce6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hourly_rate
+    - node.type.profile
+id: node.profile.field_hourly_rate
+field_name: field_hourly_rate
+entity_type: node
+bundle: profile
+label: 'Hourly rate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

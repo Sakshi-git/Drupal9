@@ -1,0 +1,27 @@
+uuid: 5752b7a9-5720-4ef6-9bd9-afbe8d2489c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_wages
+field_name: field_wages
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hourly
+      label: 'Hourly rate'
+    -
+      value: fixed
+      label: 'Fixed cost (monthly)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,41 @@
+uuid: 3374cffc-e71d-42ec-8224-fb94c97ad700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_hero_banner.field_background_image
+    - field.field.paragraph.content_hero_banner.field_banner_title
+    - field.field.paragraph.content_hero_banner.field_hero_description
+    - paragraphs.paragraphs_type.content_hero_banner
+  module:
+    - image
+    - text
+id: paragraph.content_hero_banner.default
+targetEntityType: paragraph
+bundle: content_hero_banner
+mode: default
+content:
+  field_background_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_banner_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_hero_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

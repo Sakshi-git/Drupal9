@@ -1,0 +1,15 @@
+uuid: b3da11e1-a93e-4e87-afc1-dc56f37a803b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraph_view_mode
+third_party_settings:
+  paragraph_view_mode:
+    enabled: false
+id: block_with_content_and_image_on_
+label: 'Block with content and image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

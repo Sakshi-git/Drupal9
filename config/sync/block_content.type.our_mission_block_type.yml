@@ -1,0 +1,8 @@
+uuid: 42a4ac1f-232e-46b2-bfba-0b58e58e89a4
+langcode: en
+status: true
+dependencies: {  }
+id: our_mission_block_type
+label: 'Our mission block type'
+revision: 0
+description: ''

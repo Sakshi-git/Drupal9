@@ -1,0 +1,21 @@
+uuid: 189531ed-22e3-4965-a3ba-1e3527349467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.block_with_content_and_image_on_
+  module:
+    - text
+id: paragraph.block_with_content_and_image_on_.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: block_with_content_and_image_on_
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

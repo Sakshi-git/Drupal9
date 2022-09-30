@@ -1,0 +1,31 @@
+uuid: 9efd3f12-c6e0-40fe-a276-96d09f5c15fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_mission_block_type
+    - field.storage.block_content.field_content_with_des_img
+    - paragraphs.paragraphs_type.block_with_content_and_image_on_
+  module:
+    - entity_reference_revisions
+id: block_content.our_mission_block_type.field_content_with_des_img
+field_name: field_content_with_des_img
+entity_type: block_content
+bundle: our_mission_block_type
+label: 'Content with Description and image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      block_with_content_and_image_on_: block_with_content_and_image_on_
+    negate: 0
+    target_bundles_drag_drop:
+      block_with_content_and_image_on_:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

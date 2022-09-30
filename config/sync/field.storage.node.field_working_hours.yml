@@ -1,0 +1,20 @@
+uuid: ea45e956-c34b-46df-8339-b5c5700eca46
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.field_working_hours
+field_name: field_working_hours
+entity_type: node
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: c349b3e0-6e58-438a-ae0f-d70eb7f9f228
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - admin
+      - main-menu
+    parent: 'admin:system.admin_content'
+name: Profile
+type: profile
+description: 'Content type for user info'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

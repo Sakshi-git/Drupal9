@@ -1,0 +1,61 @@
+uuid: bb82fd0c-d22c-4230-9c58-5d876759e3c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portfolio.field_live_url
+    - field.field.paragraph.portfolio.field_portfolio_description
+    - field.field.paragraph.portfolio.field_project_title
+    - field.field.paragraph.portfolio.field_roles
+    - field.field.paragraph.portfolio.field_tools
+    - paragraphs.paragraphs_type.portfolio
+  module:
+    - link
+id: paragraph.portfolio.default
+targetEntityType: paragraph
+bundle: portfolio
+mode: default
+content:
+  field_live_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_portfolio_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_project_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_roles:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tools:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

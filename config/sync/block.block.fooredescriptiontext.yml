@@ -1,0 +1,30 @@
+uuid: c046eb80-8ff3-4f40-84f5-1b7717b410bd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:03e62a10-f2aa-4bdf-8800-a61944fb205f'
+  module:
+    - block_content
+    - system
+  theme:
+    - var_subtheme
+id: fooredescriptiontext
+theme: var_subtheme
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:03e62a10-f2aa-4bdf-8800-a61944fb205f'
+settings:
+  id: 'block_content:03e62a10-f2aa-4bdf-8800-a61944fb205f'
+  label: 'Foore Description text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/*'

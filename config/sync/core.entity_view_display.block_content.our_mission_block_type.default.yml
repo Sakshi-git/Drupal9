@@ -1,0 +1,24 @@
+uuid: 5db9f1ef-ef10-4987-b0b4-d404204d946d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_mission_block_type
+    - field.field.block_content.our_mission_block_type.field_content_with_des_img
+  module:
+    - entity_reference_revisions
+id: block_content.our_mission_block_type.default
+targetEntityType: block_content
+bundle: our_mission_block_type
+mode: default
+content:
+  field_content_with_des_img:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

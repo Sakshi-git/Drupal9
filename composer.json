@@ -20,12 +20,16 @@
         "drupal/background_image": "^2.0",
         "drupal/block_class": "^1.3",
         "drupal/blog": "^3.0",
+        "drupal/conditional_fields": "^4.0@alpha",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/dependent_fields": "^1.0",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/paragraph_view_mode": "^2.0",
+        "drupal/restui": "^1.20",
+        "drupal/time_range": "^2.0",
         "drupal/twig_tweak": "^3.1",
         "drupal/vartheme_bs4": "~9.0",
         "drupal/views_slideshow": "^4.8",
@@ -40,7 +44,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {

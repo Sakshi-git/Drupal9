@@ -1,0 +1,25 @@
+uuid: 77417083-fee4-433c-8d5a-79cdd9ebe937
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - var_subtheme
+_core:
+  default_config_hash: GheDnE54DL4a-cHMnlRHwM4nM75yLuWiX6xwQ_uIPOA
+id: var_subtheme_branding
+theme: var_subtheme
+region: navigation
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

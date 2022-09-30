@@ -1,0 +1,29 @@
+uuid: 4bef1b29-f024-4f89-bdea-7bb54b1ae597
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - var_subtheme
+_core:
+  default_config_hash: 6_fRtcfDSImzYTnJE2wOSVE_SlIAFzqdhAEbHS1yCVo
+id: var_subtheme_local_tasks
+theme: var_subtheme
+region: highlighted
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/node/*'

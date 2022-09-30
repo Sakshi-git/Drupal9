@@ -1,0 +1,34 @@
+uuid: 0d56fa42-ec68-43d1-9bc3-b011b5061bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_select_block_to_display_on
+    - node.type.page
+    - paragraphs.paragraphs_type.block_with_content_and_image_on_
+  module:
+    - entity_reference_revisions
+id: node.page.field_select_block_to_display_on
+field_name: field_select_block_to_display_on
+entity_type: node
+bundle: page
+label: 'Select block to display on page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      block_with_content_and_image_on_: block_with_content_and_image_on_
+    negate: 0
+    target_bundles_drag_drop:
+      block_with_content_and_image_on_:
+        weight: 3
+        enabled: true
+      content_hero_banner:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

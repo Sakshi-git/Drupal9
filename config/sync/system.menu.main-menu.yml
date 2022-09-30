@@ -1,0 +1,8 @@
+uuid: de0f79c3-d382-4df3-8ac5-4835c375db19
+langcode: en
+status: true
+dependencies: {  }
+id: main-menu
+label: 'Main menu'
+description: 'Contains primary links for the website.'
+locked: false

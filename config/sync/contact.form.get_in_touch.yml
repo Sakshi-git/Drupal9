@@ -1,0 +1,13 @@
+uuid: 100e0964-1d7e-41e6-937b-9b0d63e1c9e7
+langcode: en
+status: true
+dependencies: {  }
+id: get_in_touch
+label: 'Get in Touch'
+recipients:
+  - sakshi55.sharma@gmail.com
+  - sharma.rc86@gmail.com
+reply: ''
+weight: 0
+message: 'We will get back to you soon.'
+redirect: /

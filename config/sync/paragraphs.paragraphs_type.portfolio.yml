@@ -1,0 +1,10 @@
+uuid: 261d3c29-b044-43e5-975d-903c9d8f0b69
+langcode: en
+status: true
+dependencies: {  }
+id: portfolio
+label: portfolio
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 799adbc4-14c2-4edb-a22c-df36ac9fb1fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tools
+    - paragraphs.paragraphs_type.portfolio
+id: paragraph.portfolio.field_tools
+field_name: field_tools
+entity_type: paragraph
+bundle: portfolio
+label: tools
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

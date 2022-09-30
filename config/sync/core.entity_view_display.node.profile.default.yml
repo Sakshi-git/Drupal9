@@ -1,0 +1,126 @@
+uuid: 4c422a48-e259-4776-b4eb-0c477d7f204d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.profile.field_certification
+    - field.field.node.profile.field_education
+    - field.field.node.profile.field_expected_monthly_salaray
+    - field.field.node.profile.field_experience
+    - field.field.node.profile.field_hourly_rate
+    - field.field.node.profile.field_image
+    - field.field.node.profile.field_portfolio
+    - field.field.node.profile.field_specilization
+    - field.field.node.profile.field_wages
+    - field.field.node.profile.field_working_hours
+    - node.type.profile
+  module:
+    - datetime_range
+    - entity_reference_revisions
+    - image
+    - options
+    - text
+    - user
+id: node.profile.default
+targetEntityType: node
+bundle: profile
+mode: default
+content:
+  field_certification:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_education:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_expected_monthly_salaray:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_experience:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_hourly_rate:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_portfolio:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_specilization:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_wages:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_working_hours:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_workinh_hour_to:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

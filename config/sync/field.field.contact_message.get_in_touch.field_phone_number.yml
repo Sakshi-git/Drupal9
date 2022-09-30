@@ -1,0 +1,19 @@
+uuid: a655e2e9-6dc4-4d47-b04b-d1a1f69e6e78
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch
+    - field.storage.contact_message.field_phone_number
+id: contact_message.get_in_touch.field_phone_number
+field_name: field_phone_number
+entity_type: contact_message
+bundle: get_in_touch
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

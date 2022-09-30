@@ -1,0 +1,21 @@
+uuid: bf5b0c60-ce3a-4fb4-8967-2bb3522b59d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specilization
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_specilization
+field_name: field_specilization
+entity_type: node
+bundle: profile
+label: Specialization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

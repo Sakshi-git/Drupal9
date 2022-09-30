@@ -1,0 +1,19 @@
+uuid: 2507cab7-b036-487a-9cba-dd0a4e49f4df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certification
+    - node.type.profile
+id: node.profile.field_certification
+field_name: field_certification
+entity_type: node
+bundle: profile
+label: 'Certification (If any)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

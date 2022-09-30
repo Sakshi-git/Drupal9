@@ -1,0 +1,34 @@
+uuid: 2137b8ab-c6b2-41ef-a9cc-a1dabf439d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_hero_banner
+    - node.type.page
+    - paragraphs.paragraphs_type.content_hero_banner
+  module:
+    - entity_reference_revisions
+id: node.page.field_add_hero_banner
+field_name: field_add_hero_banner
+entity_type: node
+bundle: page
+label: 'Add Hero Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      content_hero_banner: content_hero_banner
+    negate: 0
+    target_bundles_drag_drop:
+      block_with_content_and_image_on_:
+        weight: 4
+        enabled: false
+      content_hero_banner:
+        weight: 3
+        enabled: true
+field_type: entity_reference_revisions
